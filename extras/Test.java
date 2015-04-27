@@ -18,6 +18,7 @@ public class Test {
     }
 
     public Test(Test myTest, Test2 test, Test2 test2) {
+        Test overloadedTest = new Test();
         this.myTest = myTest;
         this.test = test;
         this.test2 = test2;
