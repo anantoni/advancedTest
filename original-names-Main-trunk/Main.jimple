@@ -1,0 +1,55 @@
+public class Main extends java.lang.Object
+{
+
+    public void <init>()
+    {
+        Main l0;
+
+        l0 := @this: Main;
+
+        specialinvoke l0.<java.lang.Object: void <init>()>();
+
+        return;
+    }
+
+    public static void main(java.lang.String[])
+    {
+        java.lang.String[] l0;
+        extras.Test l1, $r0, $r2;
+        extras.Test2 $r1, $r3, $r4, $r5;
+
+        l0 := @parameter0: java.lang.String[];
+
+        $r0 = new extras.Test;
+
+        specialinvoke $r0.<extras.Test: void <init>()>();
+
+        l1 = $r0;
+
+        $r1 = new extras.Test2;
+
+        specialinvoke $r1.<extras.Test2: void <init>()>();
+
+        l1.<extras.Test: extras.Test2 test2> = $r1;
+
+        $r2 = new extras.Test;
+
+        $r3 = new extras.Test2;
+
+        specialinvoke $r3.<extras.Test2: void <init>()>();
+
+        $r4 = new extras.Test2;
+
+        specialinvoke $r4.<extras.Test2: void <init>()>();
+
+        specialinvoke $r2.<extras.Test: void <init>(extras.Test,extras.Test2,extras.Test2)>(l1, $r3, $r4);
+
+        $r5 = new extras.Test2;
+
+        specialinvoke $r5.<extras.Test2: void <init>()>();
+
+        virtualinvoke l1.<extras.Test: void speak(extras.Test2)>($r5);
+
+        return;
+    }
+}
