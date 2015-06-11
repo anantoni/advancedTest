@@ -3,36 +3,36 @@ public class Main extends java.lang.Object
 
     public void <init>()
     {
-        Main this;
+        Main r0;
 
-        this := @this: Main;
-        specialinvoke this.<java.lang.Object: void <init>()>();
+        r0 := @this: Main;
+        specialinvoke r0.<java.lang.Object: void <init>()>();
         return;
     }
 
     public static void main(java.lang.String[])
     {
-        java.lang.String[] args;
-        extras.Test $r0, test1, test3;
-        extras.Test2 $r1, $r2, $r3;
+        java.lang.String[] r0;
+        extras.Test $r1, r2, r4, $r6;
+        extras.Test2 $r3, $r5, $r7, $r8;
 
-        args := @parameter0: java.lang.String[];
-        $r0 = new extras.Test;
-        specialinvoke $r0.<extras.Test: void <init>()>();
-        test1 = $r0;
-        $r2 = new extras.Test2;
-        specialinvoke $r2.<extras.Test2: void <init>()>();
-        test1.<extras.Test: extras.Test2 test2> = $r2;
-        $r0 = new extras.Test;
-        $r1 = new extras.Test2;
-        specialinvoke $r1.<extras.Test2: void <init>()>();
+        r0 := @parameter0: java.lang.String[];
+        $r1 = new extras.Test;
+        specialinvoke $r1.<extras.Test: void <init>()>();
+        r2 = $r1;
+        $r5 = new extras.Test2;
+        specialinvoke $r5.<extras.Test2: void <init>()>();
+        r2.<extras.Test: extras.Test2 test2> = $r5;
+        $r6 = new extras.Test;
         $r3 = new extras.Test2;
         specialinvoke $r3.<extras.Test2: void <init>()>();
-        specialinvoke $r0.<extras.Test: void <init>(extras.Test,extras.Test2,extras.Test2)>(test1, $r1, $r3);
-        test3 = $r0;
-        $r2 = new extras.Test2;
-        specialinvoke $r2.<extras.Test2: void <init>()>();
-        virtualinvoke test1.<extras.Test: void speak(extras.Test2)>($r2);
+        $r7 = new extras.Test2;
+        specialinvoke $r7.<extras.Test2: void <init>()>();
+        specialinvoke $r6.<extras.Test: void <init>(extras.Test,extras.Test2,extras.Test2)>(r2, $r3, $r7);
+        r4 = $r6;
+        $r8 = new extras.Test2;
+        specialinvoke $r8.<extras.Test2: void <init>()>();
+        virtualinvoke r2.<extras.Test: void speak(extras.Test2)>($r8);
         return;
     }
 }
