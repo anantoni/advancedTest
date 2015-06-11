@@ -15,40 +15,40 @@ public class Main extends java.lang.Object
     public static void main(java.lang.String[])
     {
         java.lang.String[] args;
-        extras.Test test1, test3;
-        extras.Test2 $r0, $r1;
+        extras.Test test1, $r0, $r2;
+        extras.Test2 $r1, $r3, $r4, $r5;
 
         args := @parameter0: java.lang.String[];
 
-        test3 = new extras.Test;
+        $r0 = new extras.Test;
 
-        specialinvoke test3.<extras.Test: void <init>()>();
+        specialinvoke $r0.<extras.Test: void <init>()>();
 
-        test1 = test3;
-
-        $r0 = new extras.Test2;
-
-        specialinvoke $r0.<extras.Test2: void <init>()>();
-
-        test1.<extras.Test: extras.Test2 test2> = $r0;
-
-        test3 = new extras.Test;
-
-        $r0 = new extras.Test2;
-
-        specialinvoke $r0.<extras.Test2: void <init>()>();
+        test1 = $r0;
 
         $r1 = new extras.Test2;
 
         specialinvoke $r1.<extras.Test2: void <init>()>();
 
-        specialinvoke test3.<extras.Test: void <init>(extras.Test,extras.Test2,extras.Test2)>(test1, $r0, $r1);
+        test1.<extras.Test: extras.Test2 test2> = $r1;
 
-        $r1 = new extras.Test2;
+        $r2 = new extras.Test;
 
-        specialinvoke $r1.<extras.Test2: void <init>()>();
+        $r3 = new extras.Test2;
 
-        virtualinvoke test1.<extras.Test: void speak(extras.Test2)>($r1);
+        specialinvoke $r3.<extras.Test2: void <init>()>();
+
+        $r4 = new extras.Test2;
+
+        specialinvoke $r4.<extras.Test2: void <init>()>();
+
+        specialinvoke $r2.<extras.Test: void <init>(extras.Test,extras.Test2,extras.Test2)>(test1, $r3, $r4);
+
+        $r5 = new extras.Test2;
+
+        specialinvoke $r5.<extras.Test2: void <init>()>();
+
+        virtualinvoke test1.<extras.Test: void speak(extras.Test2)>($r5);
 
         return;
     }
