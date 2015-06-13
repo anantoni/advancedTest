@@ -8,12 +8,9 @@ public class Main {
         Test test3 = new Test(test1, new Test2(), new Test2());
         test1 = foo();
         test1.speak(new Test2());
-        
     }
-
 
     static Test foo() {
-	return new Test();
+        return new Test();
     }
-    
 }
