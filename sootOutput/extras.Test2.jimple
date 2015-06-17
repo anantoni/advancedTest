@@ -1,0 +1,43 @@
+public class extras.Test2 extends java.lang.Object
+{
+    int a;
+    boolean b;
+    extras.Test2 test2;
+    extras.Test test;
+
+    public void <init>()
+    {
+        extras.Test2 this;
+        byte a;
+        java.lang.StringBuilder $r0;
+        java.io.PrintStream $r1;
+        java.lang.String $r2;
+        extras.Test $r3;
+
+        this := @this: extras.Test2;
+        specialinvoke this.<java.lang.Object: void <init>()>();
+        a = 0;
+        $r1 = <java.lang.System: java.io.PrintStream out>;
+        $r0 = new java.lang.StringBuilder;
+        specialinvoke $r0.<java.lang.StringBuilder: void <init>()>();
+        $r0 = virtualinvoke $r0.<java.lang.StringBuilder: java.lang.StringBuilder append(java.lang.String)>("Testing: ");
+        $r0 = virtualinvoke $r0.<java.lang.StringBuilder: java.lang.StringBuilder append(int)>(a);
+        $r2 = virtualinvoke $r0.<java.lang.StringBuilder: java.lang.String toString()>();
+        virtualinvoke $r1.<java.io.PrintStream: void println(java.lang.String)>($r2);
+        $r3 = new extras.Test;
+        specialinvoke $r3.<extras.Test: void <init>()>();
+        this.<extras.Test2: extras.Test test> = $r3;
+        return;
+    }
+
+    public void speak()
+    {
+        extras.Test2 this;
+        java.io.PrintStream $r0;
+
+        this := @this: extras.Test2;
+        $r0 = <java.lang.System: java.io.PrintStream out>;
+        virtualinvoke $r0.<java.io.PrintStream: void println(java.lang.String)>("Speak");
+        return;
+    }
+}
