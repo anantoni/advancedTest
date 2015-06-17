@@ -1,0 +1,84 @@
+class extras.Test$NestedTest extends java.lang.Object
+{
+    extras.Test nestedMyTest;
+    extras.Test2 nestedTest;
+    extras.Test2 nestedTest2;
+    final extras.Test this$0;
+
+    public void <init>(extras.Test, extras.Test2, extras.Test2, extras.Test)
+    {
+        extras.Test$NestedTest this;
+        extras.Test this$0, c;
+        extras.Test2 a, b;
+
+        this := @this: extras.Test$NestedTest;
+        this$0 := @parameter0: extras.Test;
+        a := @parameter1: extras.Test2;
+        b := @parameter2: extras.Test2;
+        c := @parameter3: extras.Test;
+        this.<extras.Test$NestedTest: extras.Test this$0> = this$0;
+        specialinvoke this.<java.lang.Object: void <init>()>();
+        this.<extras.Test$NestedTest: extras.Test nestedMyTest> = c;
+        this.<extras.Test$NestedTest: extras.Test2 nestedTest> = a;
+        this.<extras.Test$NestedTest: extras.Test2 nestedTest2> = b;
+        return;
+    }
+
+    public void speak()
+    {
+        extras.Test$NestedTest this;
+        extras.Test $r0, testLocal, element;
+        java.util.ArrayList testList, testList2, $r1;
+        java.util.Iterator l4;
+        extras.Test2 element;
+        boolean $z0;
+        java.lang.Object $r2;
+
+        this := @this: extras.Test$NestedTest;
+        $r0 = new extras.Test;
+        specialinvoke $r0.<extras.Test: void <init>()>();
+        testLocal = $r0;
+        $r1 = new java.util.ArrayList;
+        specialinvoke $r1.<java.util.ArrayList: void <init>()>();
+        testList = $r1;
+        $r1 = new java.util.ArrayList;
+        specialinvoke $r1.<java.util.ArrayList: void <init>()>();
+        testList2 = $r1;
+        l4 = virtualinvoke testList2.<java.util.ArrayList: java.util.Iterator iterator()>();
+
+     label0:
+        $z0 = interfaceinvoke l4.<java.util.Iterator: boolean hasNext()>();
+        if $z0 == 0 goto label1;
+
+        $r2 = interfaceinvoke l4.<java.util.Iterator: java.lang.Object next()>();
+        element = (extras.Test2) $r2;
+        virtualinvoke element.<extras.Test2: void speak()>();
+        goto label0;
+
+     label1:
+        l4 = virtualinvoke testList.<java.util.ArrayList: java.util.Iterator iterator()>();
+
+     label2:
+        $z0 = interfaceinvoke l4.<java.util.Iterator: boolean hasNext()>();
+        if $z0 == 0 goto label3;
+
+        $r2 = interfaceinvoke l4.<java.util.Iterator: java.lang.Object next()>();
+        element = (extras.Test) $r2;
+        virtualinvoke element.<extras.Test: void speak()>();
+        goto label2;
+
+     label3:
+        return;
+    }
+
+    public void speak(extras.Test)
+    {
+        extras.Test$NestedTest this;
+        extras.Test testParam, testLocal;
+
+        this := @this: extras.Test$NestedTest;
+        testParam := @parameter0: extras.Test;
+        testLocal = testParam;
+        return;
+    }
+}

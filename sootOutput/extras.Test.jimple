@@ -1,0 +1,97 @@
+public class extras.Test extends java.lang.Object
+{
+    public extras.Test2 test2;
+    public extras.Test2 test;
+    extras.Test myTest;
+    boolean b;
+    int[] a;
+
+    public void <init>()
+    {
+        extras.Test this, $r2;
+        byte a;
+        java.io.PrintStream $r0;
+        extras.Test2 $r1;
+
+        this := @this: extras.Test;
+        specialinvoke this.<java.lang.Object: void <init>()>();
+        a = 0;
+        $r0 = <java.lang.System: java.io.PrintStream out>;
+        virtualinvoke $r0.<java.io.PrintStream: void println(int)>(a);
+        $r1 = new extras.Test2;
+        specialinvoke $r1.<extras.Test2: void <init>()>();
+        this.<extras.Test: extras.Test2 test> = $r1;
+        $r2 = new extras.Test;
+        specialinvoke $r2.<extras.Test: void <init>()>();
+        this.<extras.Test: extras.Test myTest> = $r2;
+        return;
+    }
+
+    public void <init>(extras.Test, extras.Test2, extras.Test2)
+    {
+        extras.Test this, myTest, overloadedTest, $r0;
+        extras.Test2 test, test2;
+
+        this := @this: extras.Test;
+        myTest := @parameter0: extras.Test;
+        test := @parameter1: extras.Test2;
+        test2 := @parameter2: extras.Test2;
+        specialinvoke this.<java.lang.Object: void <init>()>();
+        $r0 = new extras.Test;
+        specialinvoke $r0.<extras.Test: void <init>()>();
+        overloadedTest = $r0;
+        this.<extras.Test: extras.Test myTest> = myTest;
+        this.<extras.Test: extras.Test2 test> = test;
+        this.<extras.Test: extras.Test2 test2> = test2;
+        return;
+    }
+
+    public void speak(extras.Test2, boolean, extras.Test[])
+    {
+        extras.Test this;
+        extras.Test2 testParam, testLocal;
+        boolean testParam1, testLocal1;
+        extras.Test[] testParam2, testLocal2;
+        java.io.PrintStream $r0;
+
+        this := @this: extras.Test;
+        testParam := @parameter0: extras.Test2;
+        testParam1 := @parameter1: boolean;
+        testParam2 := @parameter2: extras.Test[];
+        $r0 = <java.lang.System: java.io.PrintStream out>;
+        virtualinvoke $r0.<java.io.PrintStream: void println(java.lang.String)>("Hello world.");
+        testLocal = testParam;
+        testLocal1 = testParam1;
+        testLocal2 = testParam2;
+        return;
+    }
+
+    public void speak(extras.Test2)
+    {
+        extras.Test this;
+        extras.Test2 testParam, testLocal;
+        java.io.PrintStream $r0;
+
+        this := @this: extras.Test;
+        testParam := @parameter0: extras.Test2;
+        $r0 = <java.lang.System: java.io.PrintStream out>;
+        virtualinvoke $r0.<java.io.PrintStream: void println(java.lang.String)>("Hello World.");
+        testLocal = testParam;
+        return;
+    }
+
+    public void speak()
+    {
+        extras.Test this;
+        java.io.PrintStream $r0;
+        extras.Test2 testLocal, $r1;
+
+        this := @this: extras.Test;
+        $r0 = <java.lang.System: java.io.PrintStream out>;
+        virtualinvoke $r0.<java.io.PrintStream: void println(java.lang.String)>("Hello World.");
+        $r1 = new extras.Test2;
+        specialinvoke $r1.<extras.Test2: void <init>()>();
+        testLocal = $r1;
+        return;
+    }
+}

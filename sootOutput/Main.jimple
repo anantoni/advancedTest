@@ -3,46 +3,46 @@ public class Main extends java.lang.Object
 
     public void <init>()
     {
-        Main l0;
+        Main this;
 
-        l0 := @this: Main;
-        specialinvoke l0.<java.lang.Object: void <init>()>();
+        this := @this: Main;
+        specialinvoke this.<java.lang.Object: void <init>()>();
         return;
     }
 
     public static void main(java.lang.String[])
     {
-        java.lang.String[] l0;
-        extras.Test $stack0, l1, l2, $stack0#3, l1#2;
-        extras.Test2 $stack3, $stack1#2, $stack4#2, $stack1#4;
+        java.lang.String[] args;
+        extras.Test $r0, test1, test3;
+        extras.Test2 $r1, $r2, $r3;
 
-        l0 := @parameter0: java.lang.String[];
-        $stack0 = new extras.Test;
-        specialinvoke $stack0.<extras.Test: void <init>()>();
-        l1 = $stack0;
-        $stack1#2 = new extras.Test2;
-        specialinvoke $stack1#2.<extras.Test2: void <init>()>();
-        l1.<extras.Test: extras.Test2 test2> = $stack1#2;
-        $stack0#3 = new extras.Test;
-        $stack3 = new extras.Test2;
-        specialinvoke $stack3.<extras.Test2: void <init>()>();
-        $stack4#2 = new extras.Test2;
-        specialinvoke $stack4#2.<extras.Test2: void <init>()>();
-        specialinvoke $stack0#3.<extras.Test: void <init>(extras.Test,extras.Test2,extras.Test2)>(l1, $stack3, $stack4#2);
-        l2 = $stack0#3;
-        l1#2 = staticinvoke <Main: extras.Test foo()>();
-        $stack1#4 = new extras.Test2;
-        specialinvoke $stack1#4.<extras.Test2: void <init>()>();
-        virtualinvoke l1#2.<extras.Test: void speak(extras.Test2)>($stack1#4);
+        args := @parameter0: java.lang.String[];
+        $r0 = new extras.Test;
+        specialinvoke $r0.<extras.Test: void <init>()>();
+        test1 = $r0;
+        $r2 = new extras.Test2;
+        specialinvoke $r2.<extras.Test2: void <init>()>();
+        test1.<extras.Test: extras.Test2 test2> = $r2;
+        $r0 = new extras.Test;
+        $r1 = new extras.Test2;
+        specialinvoke $r1.<extras.Test2: void <init>()>();
+        $r3 = new extras.Test2;
+        specialinvoke $r3.<extras.Test2: void <init>()>();
+        specialinvoke $r0.<extras.Test: void <init>(extras.Test,extras.Test2,extras.Test2)>(test1, $r1, $r3);
+        test3 = $r0;
+        test1 = staticinvoke <Main: extras.Test foo()>();
+        $r2 = new extras.Test2;
+        specialinvoke $r2.<extras.Test2: void <init>()>();
+        virtualinvoke test1.<extras.Test: void speak(extras.Test2)>($r2);
         return;
     }
 
     static extras.Test foo()
     {
-        extras.Test $stack0;
+        extras.Test $r0;
 
-        $stack0 = new extras.Test;
-        specialinvoke $stack0.<extras.Test: void <init>()>();
-        return $stack0;
+        $r0 = new extras.Test;
+        specialinvoke $r0.<extras.Test: void <init>()>();
+        return $r0;
     }
 }
