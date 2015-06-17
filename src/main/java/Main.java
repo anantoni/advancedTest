@@ -15,9 +15,17 @@ public class Main {
         int a = 1;
         test1 = new Main().buz(a, test3, test2);
         test1.speak();
+        test1 = new Main().buz();
+        test1 = foo(test1, test2);
+        test1.speak(test1.test2);
+
     }
 
     public static Test foo() {
+        return new Test();
+    }
+
+    public static Test foo(Test test, Test2 test2) {
         return new Test();
     }
 
@@ -26,6 +34,10 @@ public class Main {
             return new Test2();
         else
             return arg;
+    }
+
+    public Test buz() {
+        return new Test();
     }
 
     public Test buz(int a, Test b, Test2 c) {
