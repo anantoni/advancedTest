@@ -1,3 +1,5 @@
+package advancedTest;
+
 import extras.*;
 
 public class Main {
@@ -37,11 +39,15 @@ public class Main {
     }
 
     public Test buz() {
-        return new Test();
+        Test localTest = new Test();
+        localTest.speak();
+        return localTest;
     }
 
     public Test buz(int a, Test b, Test2 c) {
         b.speak(c);
+        Test2 localTest = new Test2();
+        localTest.speak();
         c.speak();
         return new Test();
     }

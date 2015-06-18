@@ -1,11 +1,11 @@
-public class Main extends java.lang.Object
+public class advancedTest.Main extends java.lang.Object
 {
 
     public void <init>()
     {
-        Main this;
+        advancedTest.Main this;
 
-        this := @this: Main;
+        this := @this: advancedTest.Main;
         specialinvoke this.<java.lang.Object: void <init>()>();
         return;
     }
@@ -30,7 +30,7 @@ public class Main extends java.lang.Object
         specialinvoke $r3.<extras.Test2: void <init>()>();
         specialinvoke $r0.<extras.Test: void <init>(extras.Test,extras.Test2,extras.Test2)>(test1, $r1, $r3);
         test3 = $r0;
-        test1 = staticinvoke <Main: extras.Test foo()>();
+        test1 = staticinvoke <advancedTest.Main: extras.Test foo()>();
         $r2 = new extras.Test2;
         specialinvoke $r2.<extras.Test2: void <init>()>();
         virtualinvoke test1.<extras.Test: void speak(extras.Test2)>($r2);

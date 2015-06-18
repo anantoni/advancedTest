@@ -1,12 +1,14 @@
 apply plugin: 'java'
+apply plugin: 'application'
 sourceCompatibility = 1.8
 targetCompatibility = 1.8
 version = 1.0
+mainClassName = 'advancedTest.Main';
 
 jar {
     manifest {          
              attributes('Implementation-Title': 'advancedTest',
                         'Implementation-Version': version,
-                        'Main-Class': 'Main')
+                        'Main-Class': mainClassName)
     }
 }

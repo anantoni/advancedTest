@@ -1,8 +1,5 @@
 package extras;
 
-/**
- * Created by anantoni on 21/8/2014.
- */
 public class Test2 {
     int a;
     boolean b;
