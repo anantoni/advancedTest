@@ -1,0 +1,37 @@
+buildscript {
+
+    repositories {
+        mavenCentral()
+        ivy {
+                    url "../ivy-repo"
+        }
+    }
+
+    dependencies {
+            classpath 'plast-lab:doop-gradle-plugin:1.0-SNAPSHOT'
+    }
+}
+
+apply plugin: 'java'
+apply plugin: 'doop'
+apply plugin: 'application'
+
+//version = 1.0
+mainClassName = 'advancedTest.Main';
+
+
+task wrapper(type: Wrapper) {
+    gradleVersion = '2.8'
+}
+
+doop {
+    //host = 'centauri.di.uoa.gr'
+    host = 'localhost'
+    port = 8000
+    username = 'saikos'
+    password = 'saikos123'
+    analysis.options.jre = '1.7'
+    analysis.options.soot = '2.5.0'
+    analysis.options.use_original_names = true
+    analysis.options.main_class = "advancedTest.Main"
+}

@@ -1,0 +1,20 @@
+package extras;
+
+public class Test2 {
+    int a;
+    boolean b;
+    Test2 test2;
+    Test test;
+
+    public Test2() {
+        int a = 0;
+        int[] testArray;
+        System.out.println("Testing: " + a);
+        this.test = new Test();
+    }
+
+    public void speak() {
+        System.out.println("Speak");
+    }
+
+}
