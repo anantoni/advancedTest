@@ -5,7 +5,8 @@ import java.util.ArrayList;
 
 public class Test {
     public Test2 test2;
-    public Test2 test;
+    public Test2 test22;
+    public Test test;
     Test myTest;
     boolean b;
     int[] a;
@@ -13,15 +14,18 @@ public class Test {
     public Test() {
         int a = 0;
         System.out.println(a);
-        test = new Test2();
+        test = new Test();
         myTest = new Test();
+        test2 = new Test2();
+        this.test22 = test2;
+        this.test22.test2 = new Test2();
     }
 
     public Test(Test myTest, Test2 test, Test2 test2) {
         Test overloadedTest = new Test();
         this.myTest = myTest;
-        this.test = test;
-        this.test2 = test2;
+        this.test = overloadedTest;
+        this.test22 = test2;
     }
 
     public void speak(Test2 testParam, boolean testParam1, Test[] testParam2) {
