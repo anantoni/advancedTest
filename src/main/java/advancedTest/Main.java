@@ -3,6 +3,8 @@ package advancedTest;
 import extras.*;
 
 public class Main {
+    private static Test staticTest;
+    private Test instanceTest;
 
     public static void main(String[] args) {
         Test test1 = new Test();
@@ -11,15 +13,24 @@ public class Main {
         test1 = foo();
         test1.speak(new Test2());
         test3.speak(test1.test2);
-
+        staticTest = foo();
+        
         Test2 test2 = bar(test1.test2);
         test2.speak();
         int a = 1;
+        staticTest = foo();
+        Main mainTest = new Main();
+        
         test1 = new Main().buz(a, test3, test2);
+        mainTest.instanceTest = new Main().buz();
         test1.speak();
         test1 = new Main().buz();
         test1 = foo(test1, test2);
         test1.speak(test1.test2);
+        
+        mainTest.instanceTest = new Main().buz(a, test3, test2);
+        Main main = new Main();
+        mainTest.instanceTest.test.test.test = main.buz();
 
     }
 
