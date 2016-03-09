@@ -1,4 +1,0 @@
-./java/extras/Test.java
-./java/extras/Test2.java
-./java/extras/Foo.java
-./java/advancedTest/Main.java

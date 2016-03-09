@@ -1,0 +1,5 @@
+./src/main/java/extras/Test.java
+./src/main/java/extras/Test2.java
+./src/main/java/extras/Foo.java
+./src/main/java/extras/Color.java
+./src/main/java/advancedTest/Main.java

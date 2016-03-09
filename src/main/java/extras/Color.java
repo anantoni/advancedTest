@@ -1,9 +1,9 @@
-public class Color {
-    string color;
+package extras;
 
-    pulic setColor(String color) {
+public class Color {
+    String color;
+
+    public Color(String color) {
         this.color = color;
     }
-
-
 }

@@ -27,7 +27,7 @@ public class Main {
         test1 = new Main().buz();
         test1 = foo(test1, test2);
         test1.speak(test1.test2);
-        Foo foo = Foo.builder().setColor("Red").setName("Fred").setSize(42).build();
+        Foo foo = Foo.builder().setColor(new Color("Red")).setName("Fred").setSize(42).build();
 
         mainTest.instanceTest = new Main().buz(a, test3, test2);
         Main main = new Main();

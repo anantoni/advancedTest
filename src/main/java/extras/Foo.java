@@ -1,3 +1,5 @@
+package extras;
+
 public class Foo {
   public static class Builder {
     public Foo build() {
