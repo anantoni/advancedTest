@@ -62,8 +62,8 @@ public class Test {
             for (Test2 element : testList2)
                 element.speak();
 
-            for (Test element1 : testList)
-                element1.speak();
+            // for (Test element1 : testList)
+            //     element1.speak();
         }
 
         public void speak(Test testParam) {
